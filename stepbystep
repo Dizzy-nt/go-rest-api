@@ -1,0 +1,25 @@
+Step by step Golang restapi dengan gin, gorm & Mysql
+
+file main.go, bikin fungsi main.go
+go mod ~ go mod init github.com/Dizzy-nt/go-rest-api
+import gin, gorm & mysql ~ go get github.com/gin-gonic/gin gorm.io/gorm gorm.io/driver/mysql
+package models, 
+file setup.go di package models , var DB, fungsi ConnectDatabase
+buat database ~ mysql -u root, create database go_restapi_gin
+file Warung.go di package models, buat struct Warung
+main.go, import gin, fungsi main, buat crud pake gin.default
+package controllers, package Warungcontroller, file Warungcontroller.go, fungsi crud pake context gin.default
+
+Step by step token jwt, mux & middleware
+bikin project go jwt mux, file main.go package main.go
+bikin folder config,controlles,middlewares,models
+go mod init
+get jwt, mux, gorm, mysql, golang.org/x/crypto
+fungsi main main.go, buat mux router tiap url, log.fatal ,
+package controller bikin authcontroller, bikin func login, register,logout
+buat database go-jwt-mux
+package models bikin file user.go struct (id,nama lengkap,username,pass)
+		bikin setup.go buat konek database, func ConnectDatabase
+authcontroller bikin func login, register, logout
+package config bikin jwt.go 
+
